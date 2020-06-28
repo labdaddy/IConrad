@@ -43,13 +43,6 @@ I will mention in addition that I included tasks that are meant to expose you to
 
 I will reemphasize that this list is representative of the actual trade. I've done -- or am doing -- everything on the list. I've corroborated the representativeness of the list with dozens of fellow admins.
 
-#### Comment from other redditor
-"Ideally you'd have a couple of servers to spare."
-'Do I ever.'
-
-#### Response from IConrad
-In your case then I'd recommend that you scrap the "storage VM" and use an actual storage machine. Use FreeNAS and allocate your disks as a ZFS pool. The other machines would still be KVM, Xen, or ESXi hypervisors with iSCSI backing stores provided by the FreeNAS machine. Build your VMs accordingly. Make sure you name each CentOS OS instance's rootvg uniquely for that hostname, and then use zfs-autosnapshot on the backing machine in order to give you some "test to destruction" protection (if you screw up a machine you could just pull it's VM image out of an old snapshot). I'll leave as an exercise to the reader to figure out how to get kickstarts to name volume groups by hostname, and why that would be a good thing to do.
-
 #### Another response from IConrad
 Actually, RHEL is the most common, but this is for people looking to learn how to be enterprise admins. I'm assuming they're not gonna want to pay the licensing fees involved. While it would run like absolute crap, you could run all of this off of a single machine. It wouldn't be performant but then again you wouldn't really be doing anything with it to speak of. (That lack of performance is actually one of the drawbacks of the list. Ideally you'd have a couple of servers to spare.)
 
@@ -58,6 +51,13 @@ RHN Satellite, the Spacewalk "equivalent", for example, can cost thousands of do
 I didn't recommend Ubuntu for the simple reason that you don't really see debian or Ubuntu in the "enterprise" Linux world outside of Amazon stuff. That's not to say it isn't ever used, just not in the kinds of shops I work at.
 
 If I were to have a much more "exhaustive" list I'd push debian for the fact that it's more similar to other *NIXes; and I'd have an nginx and an httpd instance side-by-side for the web front-end. The JBoss Wiki is there specifically because Enterprise Linux administration means dealing with pain-in-the-ass java-based apps, and that's just how it is. <_<
+
+#### Comment from other redditor
+"Ideally you'd have a couple of servers to spare."
+'Do I ever.'
+
+#### Response from IConrad
+In your case then I'd recommend that you scrap the "storage VM" and use an actual storage machine. Use FreeNAS and allocate your disks as a ZFS pool. The other machines would still be KVM, Xen, or ESXi hypervisors with iSCSI backing stores provided by the FreeNAS machine. Build your VMs accordingly. Make sure you name each CentOS OS instance's rootvg uniquely for that hostname, and then use zfs-autosnapshot on the backing machine in order to give you some "test to destruction" protection (if you screw up a machine you could just pull it's VM image out of an old snapshot). I'll leave as an exercise to the reader to figure out how to get kickstarts to name volume groups by hostname, and why that would be a good thing to do.
 
 
 #### Comment from other redditor
