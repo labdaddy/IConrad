@@ -7,6 +7,7 @@ SysAdmin learning
 This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
 1. Set up a KVM hypervisor.
 2. Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information.)
+- The Spacewalk project was recently retired by Red Hat so a CentOS friendly alternative is Foreman + Katello.
 3. Create a VM to provide named and dhcpd service to your entire environment. Set up the dhcp daemon to use the Spacewalk server as the pxeboot machine (thus allowing you to use Cobbler to do unattended OS installs). Make sure that every forward zone you create has a reverse zone associated with it. Use something like "internal.virtnet" (but not ".local") as your internal DNS zone.
 4. Use that Spacewalk server to automatically (without touching it) install a new pair of OS instances, with which you will then create a Master/Master pair of LDAP servers. Make sure they register with the Spacewalk server. Do not allow anonymous bind, do not use unencrypted LDAP.
 5. Reconfigure all 3 servers to use LDAP authentication.
