@@ -3,13 +3,15 @@ SysAdmin learning
 
 ##### This content is from a response to a reddit post from several years ago that outlines the steps to take to learn skills that are used on the job, day to day as opposed to a more high level school type learning track.
 The post can be found [here](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) and also the content is listed below, including some of the responses on the thread that add useful additional points.
+The original ICondrad comment is 5 years old and some items are out of date. Bullet points indicate updates to the curiculum (2020).
 
 This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
 1. Set up a KVM hypervisor.
 2. Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information.)
-- The Spacewalk project was recently discontinued (May 2020) by Red Hat so a modern alternative could be packer, ansible and terraform
-3. Create a VM to provide named and dhcpd service to your entire environment. Set up the dhcp daemon to use the Spacewalk server as the pxeboot machine (thus allowing you to use Cobbler to do unattended OS installs). Make sure that every forward zone you create has a reverse zone associated with it. Use something like "internal.virtnet" (but not ".local") as your internal DNS zone.
-4. Use that Spacewalk server to automatically (without touching it) install a new pair of OS instances, with which you will then create a Master/Master pair of LDAP servers. Make sure they register with the Spacewalk server. Do not allow anonymous bind, do not use unencrypted LDAP.
+- Centos 7 is more appropriate for 2020 onward.
+- The Spacewalk project was recently discontinued (May 2020) by Red Hat so a alternative could be Foreman/ Katello. Foreman is a lifecycle manager like Spacewalk
+3. Create a VM to provide named and dhcpd service to your entire environment. Set up the dhcp daemon to use the ~~Spacewalk~~ Foreman server as the pxeboot machine (thus allowing you to use Cobbler to do unattended OS installs). Make sure that every forward zone you create has a reverse zone associated with it. Use something like "internal.virtnet" (but not ".local") as your internal DNS zone.
+4. Use that ~~Spacewalk~~ Foreman server to automatically (without touching it) install a new pair of OS instances, with which you will then create a Master/Master pair of LDAP servers. Make sure they register with the Spacewalk server. Do not allow anonymous bind, do not use unencrypted LDAP.
 5. Reconfigure all 3 servers to use LDAP authentication.
 6. Create two new VMs, again unattendedly, which will then be Postgresql VMs. Use pgpool-II to set up master/master replication between them. Export the database from your Spacewalk server and import it into the new pgsql cluster. Reconfigure your Spacewalk instance to run off of that server.
 7. Set up a Puppet Master. Plug it into the Spacewalk server for identifying the inventory it will need to work with. (Cheat and use ansible for deployment purposes, again plugging into the Spacewalk server.)
