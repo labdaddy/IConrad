@@ -3,16 +3,15 @@ SysAdmin learning
 
 ##### This content is from a response to a reddit post from several years ago that outlines the steps to take to learn skills that are used on the job, day to day as opposed to a more high level school type learning track.
 The post can be found [here](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) and also the content is listed below, including some of the responses on the thread that add useful additional points.
-The original IConrad comment is 5 years old and some items are out of date. 
-
-This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
-1. Set up a KVM hypervisor.
-2. Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information.)
+##### The original IConrad comment is 5 years old and some items are out of date. 
 
 #### A relevant comment on this post: 
 #### "Do everything on centos 7, replace spacewalk and puppetmaster with foreman, use freeipa to do ldap, use an elk stack to do centralized logs, dont worry about centos 5, maybe throw an awx ansible server in there and automate it that way as well.
 #### Edit: - I used iconrads original list to go from being a bum to a system engineer within a couple years. It works."
 
+This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
+1. Set up a KVM hypervisor.
+2. Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information)
 3. Create a VM to provide named and dhcpd service to your entire environment. Set up the dhcp daemon to use the ~~Spacewalk~~ Foreman server as the pxeboot machine (thus allowing you to use Cobbler to do unattended OS installs). Make sure that every forward zone you create has a reverse zone associated with it. Use something like "internal.virtnet" (but not ".local") as your internal DNS zone.
 4. Use that ~~Spacewalk~~ Foreman server to automatically (without touching it) install a new pair of OS instances, with which you will then create a Master/Master pair of LDAP servers. Make sure they register with the Spacewalk server. Do not allow anonymous bind, do not use unencrypted LDAP.
 5. Reconfigure all 3 servers to use LDAP authentication.
