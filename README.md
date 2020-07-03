@@ -3,7 +3,7 @@ SysAdmin learning
 
 ##### This content is from a response to a reddit post from several years ago that outlines the steps to take to learn skills that are used on the job, day to day as opposed to a more high level school type learning track.
 The post can be found [here](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) and also the content is listed below, including some of the responses on the thread that add useful additional points.
-The original ICondrad comment is 5 years old and some items are out of date. 
+The original IConrad comment is 5 years old and some items are out of date. 
 
 This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
 1. Set up a KVM hypervisor.
