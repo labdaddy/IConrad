@@ -1,9 +1,6 @@
 #### To Install Foreman
-Foreman requires puppet to be installed on the system first.
-To install puppet: `sudo yum -y install https://yum.puppet.com/puppet6-release-el-7.noarch.rpm`
-Next, the system should have Katello installed as well.
-This is not made explicitly clear in the Foreman docs, in fact it is presented as optional. 
-Based on the contents of a youtube screenshare of
-The Foreman setup process it appears that Katello
-Is actually required. So we are installing Katello as well.
+-  Foreman requires puppet to be installed on the system first.
+- To install puppet: `sudo yum -y install https://yum.puppet.com/puppet6-release-el-7.noarch.rpm`
+- Foreman [quickstart guide](https://theforeman.org/manuals/2.1/quickstart_guide.html).
+- NOTE: From the Foreman/ Katello page, you must install Katello WITH Foreman. Katello cannot be installed after the fact. [Link.](https://theforeman.org/plugins/katello/3.16/installation/index.html) I am stating here because this is not made explicitly clear in the Foreman docs, in fact it is presented as optional. 
 
