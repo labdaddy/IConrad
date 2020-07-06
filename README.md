@@ -4,7 +4,7 @@ SysAdmin learning
 ##### This content is from a response to a reddit post from several years ago that outlines the steps to take to learn skills that are used on the job, day to day as opposed to a more high level school type learning track.
 The post can be found [here](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) and also the content is listed below, including some of the responses on the thread that add useful additional points.
 ##### The original IConrad comment is 5 years old and some items are out of date. 
-#### A relevant comment on this post: "Do everything on centos 7, replace spacewalk and puppetmaster with foreman, use freeipa to do ldap, use an elk stack to do centralized logs, dont worry about centos 5, maybe throw an awx ansible server in there and automate it that way as well. Edit: - I used iconrads original list to go from being a bum to a system engineer within a couple years. It works."
+#### A relevant comment on this post: "Do everything on centos 7, replace spacewalk and puppetmaster with foreman, use freeipa to do ldap, use an elk stack to do centralized logs, dont worry about centos 5, maybe throw an awx ansible server in there and automate it that way as well. I used iconrads original list to go from being a bum to a system engineer within a couple years. It works."
 
 This is what I tell people to do, who ask me "how do I learn to be a Linux sysadmin?".
 1. Set up a KVM hypervisor.
