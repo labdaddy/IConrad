@@ -91,7 +91,8 @@ Developers love to put their files on /tmp, which inevitably fills up temp. Whic
 COMMENT
 "There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the staff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order."
 
-Hah! (IConrad responds)
+ #### (IConrad responds)
+Hah! 
 
 It's funny that you say that. I wrote that list in order to give the "supplicant" an opportunity to dash themselves upon the rocks of the art. I have long believed that self-learners need goals, things to identify as hallmarks in the process.
 
