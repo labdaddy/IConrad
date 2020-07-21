@@ -12,7 +12,7 @@ First, the stuff you shouldn't waste time on in my opinion (you can always retur
 
 • Linux as a virtualization platform seems to be where a lot of the new-to-linux people want to go, but again this is kind of a waste of time. The reality is, you're going to be running linux on top of vSphere, AWS or Hyper-V most of the time. So just do that. You don't have to learn everything.
 
-• There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the staff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order.
+• There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the stuff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order.
 
 Instead of all that, focus on stuff that can give you an immediate career impact.
 
