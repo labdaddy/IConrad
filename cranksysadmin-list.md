@@ -1,5 +1,6 @@
-Get started with linux just enough to be useful
-Discussion
+##### Get started with linux just enough to be useful
+
+###### Discussion
 I see people on here trying to learn Linux, but I feel like a lot of them take the wrong path and either try to learn Linux using a cert of some kind, or try to learn it on their own but focus on the wrong stuff.
 
 You don't actually have to be an expert, or learn the entire platform from top to bottom. There are ways you can learn things that make you immediately useful in a mixed environment with a decent Linux footprint.
