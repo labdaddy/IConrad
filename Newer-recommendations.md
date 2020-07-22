@@ -18,6 +18,10 @@ Some adjustments I'd do:
 I'm sure there's a lot of stuff I've left out but that's just a few thoughts. Feel free to correct me if I've written some major garbage :D
 
 COMMENT
+This all is very enterprise – i.e., outdated garbage that anyone with a pulse wants to get away from desperately. Use CentOS 8. Learn systemd. Learn how to do all of the above in docker / kubernetes / AWS / GCP. Learn how to deploy nodejs, python and other languages that aren't Java. Learn how to use modern filesystems, both for local use (ZFS, Btrfs) and clustered setups (Gluster/Ceph).
+
+
+COMMENT
 - Haproxy for loadbalancing or corosync/pacemaker for more complex cases
 
 COMMENT
@@ -143,7 +147,4 @@ I'll lump the ones below together.These are good concepts, but overkill if you a
 
 20. Bonus exercise: create three more VMs. A CentOS 5, 6, and 7 machine. On each of these machines, set them up to allow you to create custom RPMs and import them into the Spacewalk server instance. Ensure your Puppet configurations work for all three and produce like-for-like behaviors.
 
-
-COMMENT
-This all is very enterprise – i.e., outdated garbage that anyone with a pulse wants to get away from desperately. Use CentOS 8. Learn systemd. Learn how to do all of the above in docker / kubernetes / AWS / GCP. Learn how to deploy nodejs, python and other languages that aren't Java. Learn how to use modern filesystems, both for local use (ZFS, Btrfs) and clustered setups (Gluster/Ceph).
 
