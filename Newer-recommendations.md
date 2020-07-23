@@ -56,6 +56,7 @@ Never used it, but this would definitely give you the concepts that can be adapt
 3. Create a VM to provide named and dhcpd service to your entire environment. Set up the dhcp daemon to use the Spacewalk server as the pxeboot machine (thus allowing you to use Cobbler to do unattended OS installs). Make sure that every forward zone you create has a reverse zone associated with it. Use something like "internal.virtnet" (but not ".local") as your internal DNS zone.
 
 This is a good basis. An advanced situation would be to know the concepts behind dynamic DNS for the interview, but seriously, don't try building a server at this point.
+
 Also run the dhcpd either from Katello or FreeIPA. Bonus Points for setting up HA on 2 separate VMs ... because why not, I guess.
 
 
