@@ -6,6 +6,12 @@
 - `sudo yum -y install http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
 - `sudo yum -y install https://yum.theforeman.org/releases/2.1/el7/x86_64/foreman-release.rpm`
 - `sudo yum -y install foreman-release-scl`
+- Set up repositories:
+- `sudo yum -y localinstall https://yum.theforeman.org/releases/2.1/el7/x86_64/foreman-release.rpm`
+- `sudo yum -y localinstall https://fedorapeople.org/groups/katello/releases/yum/3.16/katello/el7/x86_64/katello-repos-latest.rpm`
+- `sudo yum -y localinstall https://yum.puppet.com/puppet6-release-el-7.noarch.rpm`
+- `sudo yum -y localinstall https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm`
+- `sudo yum -y install foreman-release-scl`
 - NOTE: From the [Foreman quickstart page](https://theforeman.org/plugins/katello/3.16/installation/index.html): If you want to manage content (for example, RPMs, Kickstart trees, ISO and KVM images, OSTree content, and more) with Foreman please follow the [Katello installation instructions](https://theforeman.org/plugins/katello/3.16/installation/index.html). If you are a new user, ensure that you familiarize yourself with Katello and decide whether you want to use its features because installing Katello on top of an existing Foreman is unsupported. Note that you cannot install Katello on Debian systems. 
 - Another note from the red hat people on Foreman with Katello: Katello does not currently support installation on existing Foreman deployments. DO NOT attempt to install Katello on an existing Foreman deployment, unless you are a Foreman developer and willing to debug the broken configuration that will result from attempting an install on existing system.
 - In other words, if you plan to do anything useful with Foreman and you dont want to make your life a living hell, you MUST install Foreman WITH Katello. 
