@@ -1,11 +1,11 @@
-##### Get started with linux just enough to be useful
+#### Get started with linux just enough to be useful
 
-###### Discussion
+##### Discussion
 I see people on here trying to learn Linux, but I feel like a lot of them take the wrong path and either try to learn Linux using a cert of some kind, or try to learn it on their own but focus on the wrong stuff.
 
 You don't actually have to be an expert, or learn the entire platform from top to bottom. There are ways you can learn things that make you immediately useful in a mixed environment with a decent Linux footprint.
 
-First, the stuff you shouldn't waste time on in my opinion (you can always return to this stuff later):
+##### First, the stuff you shouldn't waste time on in my opinion (you can always return to this stuff later):
 
 • Desktop linux. In reality you're going to be managing linux boxes via SSH from a Mac or Windows machine. If you have a spare PC and want to set it up there's nothing wrong with that, but it's only marginally useful career-wise to get an Ubuntu desktop going and get web browsers and stuff going. You're probably not going to be managing Linux desktops.
 
@@ -15,7 +15,7 @@ First, the stuff you shouldn't waste time on in my opinion (you can always retur
 
 • There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the stuff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order.
 
-Instead of all that, focus on stuff that can give you an immediate career impact.
+##### Instead of all that, focus on stuff that can give you an immediate career impact.
 
 • Understand managing users and groups. Understand how this differs from Windows and the pros and cons. Understand permissions as well, and again how this differs from Windows.
 
@@ -41,7 +41,7 @@ The problem is too many people try to learn linux from the ground up, see it as 
 
 A Windows admin who understands the basics of troubleshooting of a LAMP environment and can look at logs and edit config files is infinitely more useful than the guy who has an Ubuntu desktop he's trying to watch movies on and has been fucking around with virtualization and samba. I don't understand why so many early Linux users get so fixated on desktop usage, samba and virtualization when these 3 things don't matter as much as the stuff I mentioned.
 
-COMMENT
+##### COMMENT
 "Desktop linux. In reality you're going to be managing linux boxes via SSH from a Mac or Windows machine"
 
 -Implying its not the year of the linux desktop...
@@ -74,22 +74,22 @@ Will you notice if that service stops working as expected?
 
 If you need another system to handle services how do you get it setup?
 
-COMMENT
+##### COMMENT
 Just a word of warning, if you're going to mess around with pxe, just skip plain pxe immediately and go straight to ipxe. Trust me, it will preserve your sanity immensely. TFTP can go die in a fire.
 
-COMMENT
+##### COMMENT
 Only thing I would add is:
 
 how do i reconfigure the service, either with a ".conf" file or with its own reconfigurator thingamadoodle.
 
-COMMENT
+##### COMMENT
 Is there a enough disk space for the service's data?
 
 Even if there is enough space. Is there enough space in /tmp? Lots of things write to temp (webservers, mail clients, auth cough kerberos cough).
 
 Developers love to put their files on /tmp, which inevitably fills up temp. Which then takes the webserver/mailserver/login prompt down.
 
-COMMENT
+##### COMMENT
 "There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the staff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order."
 
  #### (IConrad responds)
@@ -135,7 +135,7 @@ The exact hypervisor you learn about is orders of magnitude less relevant than h
 
 
 
-level 2
+##### level 2
 admiralspark
 Cat Tube Secure-er
 6 points
@@ -149,7 +149,7 @@ Having read a bunch of cranky's posts before, I think his enterprise environment
 
 
 
-level 2
+##### level 2
 a_wild_thing
 3 points
 ·
@@ -160,7 +160,7 @@ In the end I never got to make that transition to Linux Admin, which I'll probab
 
 
 
-level 2
+##### level 2
 [deleted]
 1 point
 ·
@@ -169,7 +169,7 @@ I still point people to that guide as a way of showing them the scope of what bu
 
 
 
-level 2
+##### level 2
 [deleted]
 1 point
 ·
