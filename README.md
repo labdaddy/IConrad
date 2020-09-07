@@ -1,5 +1,23 @@
-UPDATED IConrad 
+##### COMMENT
+Some adjustments I'd do:
+-CentOS 7 instead of CentOS 6 (mostly because the majority is still on rhel7 / centos7)*
+- Foreman-Katello instead of Spacewalk
+- Run the dhcpd either from Katello or FreeIPA. Bonus Points for setting up HA on 2 separate VMs ... because why not, I guess.
+- FreeIPA instead of OpenLDAP
+- Use Ansible for all your configuration Management
+- Setup a Server that hosts AWX so you can have Tower-like functionality with ansible
+- Bonus Points for a gitlab instance you host yourself for your IAC
+- Skip Postgres Cluster for Spacewalk
+- Host your own Mailserver dedicated to only that environment and configure all servers to use this server for mail transfers
+- For Application Servers, I'd checkout wildfly since you can't download Jboss directly afaik
+- In terms of Loadbalancing, I'd go with Traefik or Nginx instead of iptables
 
+* Once done with all the tasks, migrate the servers group by group to CentOS 8
+
+I'm sure there's a lot of stuff I've left out but that's just a few thoughts. Feel free to correct me if I've written some major garbage :D
+
+
+#### UPDATED IConrad 
 I'll go one-for-one here:
 
 1.Set up a KVM hypervisor.
