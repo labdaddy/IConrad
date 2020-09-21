@@ -15,7 +15,7 @@ You don't actually have to be an expert, or learn the entire platform from top t
 
 • There's an overly complex "how to learn linux" guide that r/sysadmin loves (and I hate) because it focuses way too much on the stuff I'm telling you doesn't matter as much if you just want to be functional, and it does it in a weird order.
 
-#### Instead of all that, focus on stuff that can give you an immediate career impact.
+### Instead of all that, focus on stuff that can give you an immediate career impact.
 
 • Understand managing users and groups. Understand how this differs from Windows and the pros and cons. Understand permissions as well, and again how this differs from Windows.
 
